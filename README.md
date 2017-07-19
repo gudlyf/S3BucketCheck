@@ -1,6 +1,7 @@
-S3BucketCheck
+# S3BucketCheck
 
 Authored by: Keith McDuffee (gudlyf@realistek.com)
+
 Date: 2017-07-19
 
 Using terraform, create lambda function to check all of the account's
@@ -13,7 +14,11 @@ Lambda fuctions, CloudWatch events, IAM policies and roles, and
 SNS topics within environment variables:
 
   AWS_REGION
+
   AWS_ACCESS_KEY_ID
+
   AWS_SECRET_ACCESS_KEY
+
   AWS_SECURITY_TOKEN (if using MFA)
+
   AWS_SESSION_TOKEN (if using MFA)

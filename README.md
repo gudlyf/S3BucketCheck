@@ -1,7 +1,7 @@
 S3BucketCheck
 
-Authored by: Keith McDuffee (mcduffeek@dnb.com)
-2017-07-19
+Authored by: Keith McDuffee (gudlyf@realistek.com)
+Date: 2017-07-19
 
 Using terraform, create lambda function to check all of the account's
 S3 bucket ACLs for any that are public read/write or authorize

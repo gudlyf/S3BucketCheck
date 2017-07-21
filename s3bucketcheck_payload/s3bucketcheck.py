@@ -25,5 +25,5 @@ def lambda_handler(event, context):
         response = sns_client.publish(
                 TargetArn=os.environ['sns_arn'],
                 Message=json.dumps({'default': json.dumps(message)}),
-                Subject='S3BucketCheck Report'
+                Subject='S3BucketCheck Report for '+os.environ['account_id']+' - '+os.environ['aws_region']
             )

@@ -4,12 +4,12 @@ Authored by: Keith McDuffee (gudlyf@realistek.com)
 
 Date: 2017-07-19
 
-Using terraform, create lambda function to check all of the account's
-S3 bucket ACLs for any that are public read/write or authorize
+Using terraform, creates a lambda function to check all of the account's
+S3 bucket ACLs for any that are public read/write or authorized
 global users read/write access. Sends output through SNS to email
-provides (currently only supporting one email address).
+target (currently only supporting one email address).
 
-Must set AWS credentials for an account with permission to create
+You must set AWS credentials for an account with permission to create
 Lambda fuctions, CloudWatch events, IAM policies and roles, and
 SNS topics within environment variables:
 
@@ -22,3 +22,5 @@ SNS topics within environment variables:
   AWS_SECURITY_TOKEN (if using MFA)
 
   AWS_SESSION_TOKEN (if using MFA)
+
+Then run 'make.sh'.
